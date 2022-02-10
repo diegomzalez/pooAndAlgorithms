@@ -22,10 +22,13 @@ def merge_sort(list: list) -> list:
       if list_left_side[i] < list_right_side[j]:
         list[k] = list_left_side[i]
         i += 1
+        print(i)
       else:
         list[k] = list_right_side[j]
         j += 1
+        print(k)
       k += 1
+      print(k)
     while i < len(list_left_side):
       list[k] = list_left_side[i]
       i += 1
